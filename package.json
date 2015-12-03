@@ -1,0 +1,31 @@
+{
+  "name": "pluralise",
+  "version": "1.0.0",
+  "description": "Pluralise our product names",
+  "main": "src/pluralize",
+  "scripts": {
+    "ci": "npm run lint && npm run coverage",
+    "coverage": "istanbul cover _mocha -- test/*.js && istanbul check-coverage",
+    "lint": "make-up src && echo '🍻  All good!'",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holidayextras/pluralise.git"
+  },
+  "author": "Paul Clarke <paul.clarke@holidayextras.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/holidayextras/pluralise/issues"
+  },
+  "homepage": "https://github.com/holidayextras/pluralise#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "istanbul": "^0.4.1",
+    "make-up": "^6.0.0",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "pluralize": "^1.2.1"
+  }
+}
